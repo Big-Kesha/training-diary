@@ -1,0 +1,3 @@
+function WorkoutHistory() {}
+
+export { WorkoutHistory };

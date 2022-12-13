@@ -1,0 +1,3 @@
+function NewWorkout() {}
+
+export { NewWorkout };
