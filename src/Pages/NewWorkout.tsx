@@ -1,3 +1,0 @@
-function NewWorkout() {}
-
-export { NewWorkout };

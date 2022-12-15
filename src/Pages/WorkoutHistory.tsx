@@ -1,3 +1,0 @@
-function WorkoutHistory() {}
-
-export { WorkoutHistory };

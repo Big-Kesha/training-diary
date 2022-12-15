@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="/new_workout">New Workout</a>
+            <NavLink to="/new-workout">New Workout</NavLink>
           </li>
           <li>
-            <a href="/workout_history">Workout History</a>
+            <NavLink to="/workout-history">Workout History</NavLink>
           </li>
         </ul>
       </nav>

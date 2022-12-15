@@ -1,0 +1,19 @@
+.form {
+  border: 1px solid lightgray;
+  padding: 5px 5px;
+  max-width: fit-content;
+}
+.input {
+  border: 1px solid black;
+  padding: 5px 5px;
+  margin-right: 5px;
+}
+.button {
+  border: 1px solid gray;
+  background-color: #b4d572;
+  padding: 5px 5px;
+}
+.button:hover {
+  background-color: #a7c56a;
+  cursor: pointer;
+}

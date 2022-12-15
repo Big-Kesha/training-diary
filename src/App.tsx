@@ -1,24 +1,23 @@
-import React from "react";
-import { Header } from "./Components/Header";
-import { Footer } from "./Components/Footer";
-import { createBrowserRouter, Routes } from "react-router-dom";
+import { Layout } from "./Components/Layout/Layout";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello World</div>,
-  },
-]);
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Components/Pages/HomePage/Home";
+import { WorkoutHistory } from "./Components/Pages/HistoryPage/WorkoutHistory";
+import { NewWorkout } from "./Components/Pages/NewWorkoutPage/NewWorkout";
+import { NotFound } from "./Components/Pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div>
-        <h1>Getting started</h1>
-      </div>
-      <Footer />
-    </>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="workout-history" element={<WorkoutHistory />} />
+          <Route path="new-workout" element={<NewWorkout />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </div>
   );
 }
 
