@@ -17,3 +17,9 @@
   background-color: #a7c56a;
   cursor: pointer;
 }
+.exercise_item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 15px;
+}

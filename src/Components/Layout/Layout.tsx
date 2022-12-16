@@ -8,17 +8,17 @@ function Layout() {
           <nav>
             <ul className={styles.navigation_list}>
               <li className={styles.navigation_item}>
-                <NavLink to="/" className={styles.link}>
+                <NavLink to="/" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}>
                   Home
                 </NavLink>
               </li>
               <li className={styles.navigation_item}>
-                <NavLink to="/new-workout" className={styles.link}>
+                <NavLink to="/new-workout" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}>
                   New Workout
                 </NavLink>
               </li>
               <li className={styles.navigation_item}>
-                <NavLink to="/workout-history" className={styles.link}>
+                <NavLink to="/workout-history" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}>
                   Workout History
                 </NavLink>
               </li>
